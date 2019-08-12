@@ -1,0 +1,13 @@
+.clas-room{
+    display: grid;
+    grid-template-columns: 25% auto;
+    height: 100%;
+}
+
+.cr-content{
+    grid-template-columns: 2 / 3;
+    height: 100%;
+    border-left: 2px solid #F5F5F5;
+    position: relative;
+}
+

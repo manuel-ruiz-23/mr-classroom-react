@@ -1,0 +1,7 @@
+.navbar{
+    grid-template-columns: 1 / 2;
+
+    display: flex;
+    flex-flow: column;
+    margin-right: 8px;
+}
