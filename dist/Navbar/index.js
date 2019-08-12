@@ -1,5 +1,6 @@
 import React from 'react';
 import NavItem from './NavItem';
+import styles from './navbar.module.css';
 
 const Navbar = ({
   lessons,
@@ -7,7 +8,7 @@ const Navbar = ({
 }) => {
   console.log('lessons from nav', lessons.length);
   return React.createElement("div", {
-    className: "cr-navbar"
+    className: styles.navbar
   }, lessons.map((lesson, index) => React.createElement(NavItem, {
     key: index,
     lesson: lesson,

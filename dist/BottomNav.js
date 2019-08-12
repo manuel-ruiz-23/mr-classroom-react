@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './bottomNav.module.css';
 
 const BottomNav = ({
   nextLesson,
@@ -15,9 +16,8 @@ const BottomNav = ({
   }
 
   return React.createElement("div", {
-    className: "cr-content-end"
+    className: styles.wrapper
   }, React.createElement("p", null, bottomText), !finalLesson && React.createElement("button", {
-    className: "boton",
     onClick: () => nextLesson(current)
   }, "next"));
 };

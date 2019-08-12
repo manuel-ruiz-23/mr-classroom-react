@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './navbarItem.module.css';
 
 const NavItem = ({
   lesson,
@@ -6,15 +7,12 @@ const NavItem = ({
   navigate,
   end
 }) => {
-  // console.log('navItem props', lesson, start, end, comp);
   const {
     title,
     comp
   } = lesson;
-  let className = 'cr-nav-item';
-  if (index === 0) className += ' start';
-  if (end) className += ' end';
-  if (comp) className += ' comp';
+  let className = styles.navItem;
+  if (comp) className = styles.navItemComp;
   return React.createElement("div", {
     className: className,
     onClick: () => navigate(index)
