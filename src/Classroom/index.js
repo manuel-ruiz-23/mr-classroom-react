@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import BottomNav from './BottomNav';
 
-import './index.css';
+import styles from './index.module.css';
 
 const Test = ( ) => (<div>Test Correcto!!</div>)
 
@@ -47,9 +47,9 @@ class ClassRoom extends React.Component {
         const { navigate, nextLesson } = this;
         const View = lessons[currentLesson].view;
         return (
-            <div className="clas-room">
+            <div className={styles.classroom}>
                 <Navbar lessons={lessons} navigate={navigate}/>
-                <div className="cr-content">
+                <div className={styles.content}>
                     <View />
                     <BottomNav 
                         lessons={lessons}

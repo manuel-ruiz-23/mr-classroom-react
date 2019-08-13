@@ -1,22 +1,27 @@
 .navItem{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     height: 64px;
     width: 100%;
-    border-bottom: 1px solid #F5F5F5;
+    border-bottom: 2px solid #6D7275;
+    /* border-top: 2px solid #6D7275; */
     /* border-right: 2px solid #F5F5F5; */
+}
+
+.navItem p{
+    margin-left: 16px;
 }
 
 .navItem:before{
     content: '';
     position: absolute;
-    left: 14px;
+    right: 14px;
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background-color: #EE5EAC;
+    background-color: #6D7275;
 }
 
 /* .navItem:after {
@@ -30,7 +35,7 @@
 } */
 
 .navItemComp::before{
-    background-color: rgb(67, 199, 33);
+    background-color: #C20114;
 }
 /* .navItemComp::after{
     background-color: rgb(67, 199, 33);
@@ -38,4 +43,5 @@
 
 .navItemComp {
     composes: navItem;
+    border-bottom: 2px solid #C20114;
 }

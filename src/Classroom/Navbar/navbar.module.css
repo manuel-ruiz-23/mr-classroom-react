@@ -3,5 +3,7 @@
 
     display: flex;
     flex-flow: column;
-    margin-right: 8px;
+    /* margin-right: 8px; */
+
+    /* background: #ECEBF3; */
 }
