@@ -1,12 +1,14 @@
 import React from 'react';
 import Classroom from '../Classroom';
 
-const uno = () => (<div>uno</div>);
+import Intro from './lessons/Uno';
+
 const dos = () => (<div>dos</div>);
 const tres = () => (<div>tres</div>);
 
 const lessons = [
-    {title: 'uno', view: uno},
+    // {title: 'uno', view: Intro},
+    {title: 'uno', view: Intro},
     {title: 'dos', view: dos},
     {title: 'tres', view: tres},
 ]

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import styles from './bottomNav.module.css';
 
@@ -26,6 +27,12 @@ const BottomNav = ({nextLesson, current, lessons}) => {
         </div>
     )
 };
+
+BottomNav.propTypes = {
+    nextLesson: PropTypes.func,
+    current: PropTypes.number,
+    lessons: PropTypes.array,
+}
 
 export default BottomNav;
 

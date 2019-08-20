@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Navbar from './Navbar';
 import BottomNav from './BottomNav';
@@ -61,6 +62,14 @@ class ClassRoom extends React.Component {
         )
     }  
 };
+
+ClassRoom.protoTypes ={
+    lessons: PropTypes.arrayOf(PropTypes.shape({
+        title: PropTypes.string.isRequired,
+        view: PropTypes.element.isRequired
+    })).isRequired,
+    
+}
 
 export default ClassRoom;
 

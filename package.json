@@ -5,15 +5,18 @@
   "license": "(ISC OR GPL-3.0)",
   "homepage": "https://github.com/manuel-ruiz-23/mr-classroom-react",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/manuel-ruiz-23/mr-classroom-react"
+    "type": "git",
+    "url": "https://github.com/manuel-ruiz-23/mr-classroom-react"
   },
   "main": "dist/index.js",
   "module": "dist/index.js",
   "babel": {
-    "presets": [ "@babel/react" ]
+    "presets": [
+      "@babel/react"
+    ]
   },
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
